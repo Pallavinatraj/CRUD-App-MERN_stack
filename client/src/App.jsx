@@ -10,7 +10,6 @@ function App() {
       <nav>
         <Link to="/">Users</Link> |{' '}
         <Link to="/CreateUser">Create User</Link> |{' '}
-        <Link to="/UpdateUser">Update User</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Users />} />

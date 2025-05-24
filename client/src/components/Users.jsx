@@ -11,12 +11,13 @@ function Users() {
     .catch(err => console.log(err))
   },[])
 
-  const handleDelete =(id)=>{
-     axios.delete('http://localhost:3001/deleteUser/' + id)
-     .then(res => {console.log(res)
-      window.location.reload()})
-     .catch(err => console.log(err))
-  }
+ const handleDelete = (id) => {
+  axios.delete(`http://localhost:3001/deleteUser/${id}`)
+    .then(() => {
+      setUsers(users.filter(user => user._id !== id));
+    })
+    .catch(err => console.log(err));
+  };
 
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
