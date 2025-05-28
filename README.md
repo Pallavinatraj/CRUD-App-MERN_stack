@@ -25,35 +25,8 @@ Edit
 ├── server/         # Node/Express backend
 ├── .env            # Environment variables
 ├── README.md
-⚙️ Setup Instructions
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/your-crud-app.git
-cd your-crud-app
-2. Install backend dependencies
-bash
-Copy
-Edit
-cd server
-npm install
-3. Install frontend dependencies
-bash
-Copy
-Edit
-cd ../client
-npm install
-4. Set up .env file (in server/)
-env
-Copy
-Edit
-PORT=5000
-MONGO_URI=your_mongo_connection_string
-5. Run the app
-bash
-Copy
-Edit
+
+
 # In one terminal (backend)
 cd server
 npm start
